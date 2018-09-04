@@ -1,2 +1,2 @@
 <?php
-echo "Siegheil";
+echo "grüezi";
