@@ -9,6 +9,8 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="stylesheet/sticky-footer.css">
+    <link rel="stylesheet" href="stylesheet/OGD-2.0.css">
+
 
     <title>OGD-2.0</title>
 
@@ -21,20 +23,46 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
+
+
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="">Link</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
         </ul>
     </div>
+
+
+
+
+
 </nav>
+<div class="container-fluid">
+<div class="btn-group" role="group">
+
+    <button type="button" class="btn btn-secondary">2010</button>
+    <button type="button" class="btn btn-secondary">2015</button>
+    <button type="button" class="btn btn-secondary">2020</button>
+
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+        <button type="button" class="btn btn-primary">PM10</button>
+    </div>
+</div>
+
 
 <footer class="footer">
     <div class="container">
@@ -51,7 +79,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+
+
+
 </body>
 </html>
-=======
+
+
+
+
+
+
+
 <?php
