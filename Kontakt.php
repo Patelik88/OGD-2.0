@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="de">
 <head>
@@ -36,8 +35,13 @@
     </div>
 </nav>
 
+<div class="container-fluid my-4">
+    <p>Hier können Sie uns krass kontaktieren</p>
+</div>
+
+
 <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
         <span class="text-muted">Dieser Footer ist cool</span>
     </div>
 </footer>
@@ -53,5 +57,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-=======
-<?php

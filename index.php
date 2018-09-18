@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="de">
 <head>
@@ -24,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Kontakt.php">Kontakt</a>
@@ -36,9 +35,13 @@
     </div>
 </nav>
 
+<div class="container-fluid my-4">
+    <p>Hier käme eine Karte hin wenn ich wüsste wie das geht haha</p>
+</div>
+
 <footer class="footer">
-    <div class="container">
-        <span class="text-muted">Dieser Footer ist cool</span>
+    <div class="container text-center">
+        <span class="text-muted">Diese Website wurde entwickelt</span>
     </div>
 </footer>
 
@@ -53,5 +56,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-=======
-<?php

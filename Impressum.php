@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="de">
 <head>
@@ -30,14 +29,19 @@
                 <a class="nav-link" href="Kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Impressum <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Impressum<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
 </nav>
 
+<div class="container-fluid my-4">
+    <p>Hier befindet sich ein Impressum</p>
+</div>
+
+
 <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
         <span class="text-muted">Dieser Footer ist cool</span>
     </div>
 </footer>
@@ -53,5 +57,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-=======
-<?php
