@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="de">
 <head>
@@ -23,38 +22,26 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Kontakt.php">Kontakt</a>
+            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Impressum<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="container-fluid">
-<div class="btn-group" role="group">
 
-    <button type="button" class="btn btn-secondary">2010</button>
-    <button type="button" class="btn btn-secondary">2015</button>
-    <button type="button" class="btn btn-secondary">2020</button>
-
-</div>
-</div>
-
-
-<div class="container-fluid">
-
-        <button type="button" class="btn btn-primary">PM10</button>
-    </div>
+<div class="container-fluid my-4">
+    <p>Hier befindet sich ein Impressum</p>
 </div>
 
 
 <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
         <span class="text-muted">Dieser Footer ist cool</span>
     </div>
 </footer>
@@ -70,11 +57,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-<?php
