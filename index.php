@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="shortcut icon" href="http://grants.ulbsibiu.ro/sidpop/blocks/continut_imagine/images/x.png" type="image/x-icon"/>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -27,15 +29,15 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="Kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="Impressum.php">Impressum</a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="container-fluid">
+<div class="container-fluid my-4">
 <div class="btn-group" role="group">
 
     <button type="button" class="btn btn-secondary">2010</button>
@@ -54,7 +56,7 @@
 
 
 <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
         <span class="text-muted">Dieser Footer ist cool</span>
     </div>
 </footer>
