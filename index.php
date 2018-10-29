@@ -1,11 +1,11 @@
-
 <!doctype html>
 <html lang="de">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="http://grants.ulbsibiu.ro/sidpop/blocks/continut_imagine/images/x.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://grants.ulbsibiu.ro/sidpop/blocks/continut_imagine/images/x.png"
+          type="image/x-icon"/>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -38,26 +38,22 @@
     </div>
 </nav>
 <div class="container-fluid my-4">
-<div class="btn-group" role="group">
-
-    <button type="button" class="btn btn-secondary">2010</button>
-    <button type="button" class="btn btn-secondary">2015</button>
-    <button type="button" class="btn btn-secondary">2020</button>
-
-</div>
-</div>
-
-
-<div class="container-fluid">
-
-        <button type="button" class="btn btn-primary">PM10</button>
+    <div class="btn-group" role="group">
+        <button type="button" id="btn2010" class="btn btn-secondary">2010</button>
+        <button type="button" id="btn2015" class="btn btn-secondary">2015</button>
+        <button type="button" id="btn2020" class="btn btn-secondary">2020</button>
     </div>
 </div>
 
+<div class="container-fluid">
+
+    <button type="button" id="btnPM10" class="btn btn-primary">PM10</button>
+</div>
+</div>
 
 <footer class="footer">
     <div class="container text-center">
-        <span class="text-muted">Dieser Footer ist cool</span>
+        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 
@@ -72,11 +68,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-<?php
