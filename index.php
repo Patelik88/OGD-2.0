@@ -50,6 +50,10 @@
     <button type="button" id="btnPM10" class="btn btn-primary">NO2</button>
 </div>
 
+<div id="container">
+    <div id="graph"></div>
+</div>
+
 <footer class="footer">
     <div class="container text-center">
         <span class="text-muted">Dies ist ein Projekt mit OGD</span>
