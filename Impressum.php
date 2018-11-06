@@ -44,7 +44,7 @@
 
 <footer class="footer">
     <div class="container text-center">
-        <span class="text-muted">Der Grand Canyon ist der Grand Canyon</span>
+        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 

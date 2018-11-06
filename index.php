@@ -46,9 +46,8 @@
 </div>
 
 <div class="container-fluid">
-
     <button type="button" id="btnPM10" class="btn btn-primary">PM10</button>
-</div>
+    <button type="button" id="btnPM10" class="btn btn-primary">NO2</button>
 </div>
 
 <footer class="footer">

@@ -39,14 +39,13 @@
 </nav>
 
 <div class="container my-4">
-    <form id="contact-form" method="post" action="Kontakt.php" role="form">
-        <div class="messages"></div>
+    <form id="contact-form" method="post" action="send-mail-form.php" role="form">
         <div class="controls">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="form_name">Vorname</label>
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Vorname"
+                        <input id="form_name" type="text" name="vorname" class="form-control" placeholder="Vorname"
                                required="required" data-error="Der Vorname wird benötigt">
                         <div class="help-block with-errors"></div>
                     </div>
@@ -54,7 +53,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="form_lastname">Nachname</label>
-                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Nachname"
+                        <input id="form_lastname" type="text" name="nachname" class="form-control" placeholder="Nachname"
                                required="required" data-error="Der Nachname wird benötigt">
                         <div class="help-block with-errors"></div>
                     </div>
@@ -74,7 +73,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="form_message">Nachricht</label>
-                        <textarea id="form_message" name="nachricht" class="form-control" placeholder="Nachricht" rows="4"
+                        <textarea id="form_message" name="nachricht" class="form-control" placeholder="Nachricht"
+                                  rows="4"
                                   required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
@@ -89,7 +89,7 @@
 
 <footer class="footer">
     <div class="container text-center">
-        <span class="text-muted">Dieser Footer ist cool</span>
+        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 
