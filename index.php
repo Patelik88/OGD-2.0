@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="stylesheet/sticky-footer.css">
+    <link rel="stylesheet" href="css/sticky-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
 
     <title>OGD-2.0</title>
 
@@ -37,6 +46,7 @@
         </ul>
     </div>
 </nav>
+
 <div class="container-fluid my-4">
     <div class="btn-group" role="group">
         <button type="button" id="btn2010" class="btn btn-secondary">2010</button>
@@ -59,6 +69,10 @@
         <span class="text-muted">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
