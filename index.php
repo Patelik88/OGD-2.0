@@ -11,6 +11,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 
     <script src="js/jquery.min.js"></script>
 
