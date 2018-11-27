@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+
+    <link rel="stylesheet" href="css/footer.css">
+
     <title>OGD-2.0</title>
 
 </head>
@@ -26,6 +29,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Home</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="spacetime.php">Zeit</a>
+            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">Kontakt <span class="sr-only">(current)</span></a>
             </li>
@@ -35,42 +41,46 @@
         </ul>
     </div>
 </nav>
-
+<main class="haupt">
 <div class="container my-4">
     <form id="contact-form" method="post" action="Kontakt.php" role="form">
         <div class="controls">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="vorname">Vorname</label>
-                        <input id="vorname" type="text" name="vorname" class="form-control" placeholder="Vorname"
+                        <label for="form_name">Vorname</label>
+                        <input id="form_name" type="text" name="vorname" class="form-control" placeholder="Vorname"
                                required="required" data-error="Der Vorname wird benötigt">
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="nachname">Nachname</label>
-                        <input id="nachname" type="text" name="nachname" class="form-control" placeholder="Nachname"
+                        <label for="form_lastname">Nachname</label>
+                        <input id="form_lastname" type="text" name="nachname" class="form-control" placeholder="Nachname"
                                required="required" data-error="Der Nachname wird benötigt">
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input id="email" type="email" name="email" class="form-control" placeholder="E-Mail"
+                        <label for="form_email">E-Mail</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail"
                                required="required" data-error="Die E-Mail wird benötigt">
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="nachricht">Nachricht</label>
-                        <textarea id="nachricht" name="nachricht" class="form-control" placeholder="Nachricht"
+                        <label for="form_message">Nachricht</label>
+                        <textarea id="form_message" name="nachricht" class="form-control" placeholder="Nachricht"
                                   rows="4"
                                   required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -80,6 +90,41 @@
         </div>
     </form>
 </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footertext">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h4>Kontakt</h4>
+                <ul class="contact">
+                    <li>Unternehmensnetzwerk Frauenfeld</li>
+                    <li>Rolf Müller c/o Printimo AG</li>
+                    <li>Frauenfelderstrasse 21 A</li>
+                    <li>8404 Winterthur</li>
+                    <li>+41 79 359 94 00</li>
+                    <li><span id="_emoaddrId2"><span class="emo_address">Bitte Javascript aktivieren!</span></span></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Partnerlinks</h4>
+                <ul class="partner">
+                    <li><a target="_blank" href="http://www.frauenfeld.ch">» Frauenfeld</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Sitemap</h4>
+                <ul class="sitemap">
+                    <li class="first active"><a href="/" >Home</a></li><li><a href="netzwerk/" >Netzwerk</a></li><li><a href="ueber-uns/unser-ursprung.html" >Über uns</a></li><li><a href="mitglieder/" >Mitglieder</a></li><li><a href="events2/veranstaltungsuebersicht/" >Events</a></li><li><a href="aktuell/" >Aktuelles</a></li><li class="last"><a href="kontakt.html" >Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
 <?php
 
 // ======= Konfiguration:
@@ -89,9 +134,7 @@ $nachname = $_POST['nachname'];
 $from = $_POST['email'];
 $text = $_POST['nachricht'];
 
-
-$mail_senden = mail($empfaenger, $nachname, $text, $from);
-
+        $mail_senden = mail($empfaenger, $nachname, $text, $from);
 
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
@@ -104,11 +147,8 @@ if($mail_senden){
 
 ?>
 
-<footer class="footer bg-dark">
-    <div class="container text-center">
-        <span class="text-white">Dies ist ein Projekt mit OGD</span>
-    </div>
-</footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
