@@ -47,7 +47,6 @@
                         <label for="vorname">Vorname</label>
                         <input id="vorname" type="text" name="vorname" class="form-control" placeholder="Vorname"
                                required="required" data-error="Der Vorname wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -55,7 +54,6 @@
                         <label for="nachname">Nachname</label>
                         <input id="nachname" type="text" name="nachname" class="form-control" placeholder="Nachname"
                                required="required" data-error="Der Nachname wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
@@ -65,7 +63,6 @@
                         <label for="email">E-Mail</label>
                         <input id="email" type="email" name="email" class="form-control" placeholder="E-Mail"
                                required="required" data-error="Die E-Mail wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
@@ -76,7 +73,6 @@
                         <textarea id="nachricht" name="nachricht" class="form-control" placeholder="Nachricht"
                                   rows="4"
                                   required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -87,9 +83,9 @@
     </form>
 </div>
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container text-center">
-        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
+        <span class="text-white">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 

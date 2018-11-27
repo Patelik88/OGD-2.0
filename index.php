@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/sticky-footer.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery.min.js"></script>
 
-    <script src="//d3js.org/d3.v3.min.js"></script>
-    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
 
-    <script src="js/d3.v3.min.js"></script>
-    <script src="js/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+            crossorigin=""></script>
+
+    <!--    <script src="//d3js.org/d3.v3.min.js"></script>-->
+    <!--    <script src="//d3js.org/topojson.v1.min.js"></script>-->
+    <!---->
+    <!--    <script src="js/d3.v3.min.js"></script>-->
+    <!--    <script src="js/topojson.v1.min.js"></script>-->
 
     <title>OGD-2.0</title>
 
@@ -48,31 +56,34 @@
 </nav>
 
 <div class="container-fluid my-4">
-    <div class="btn-group" role="group">
+    <div class="btn-group btn-group-lg" role="group">
         <button type="button" id="btn2010" class="btn btn-secondary">2010</button>
         <button type="button" id="btn2015" class="btn btn-secondary">2015</button>
         <button type="button" id="btn2020" class="btn btn-secondary">2020</button>
     </div>
 </div>
 
-<div class="container-fluid">
-    <button type="button" id="btnPM10" class="btn btn-primary">PM10</button>
-    <button type="button" id="btnPM10" class="btn btn-primary">NO2</button>
+<div class="container-fluid my-4">
+    <div class="btn-group btn-group" role="group">
+        <button type="button" id="btnPM10" class="btn btn-primary">PM10</button>
+        <button type="button" id="btnNO2" class="btn btn-primary">NO2</button>
+    </div>
 </div>
 
 <div id="container">
     <div id="graph"></div>
 </div>
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container text-center">
-        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
+        <span class="text-white">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="js/main.js"></script>
+<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+<!--<script src="js/main.js"></script>-->
 <script src="js/app.js"></script>
+<script src="js/leaflet.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

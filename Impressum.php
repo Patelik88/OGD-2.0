@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/sticky-footer.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 
     <title>OGD-2.0</title>
 
@@ -42,9 +42,9 @@
     <p>Hier befindet sich ein Impressum</p>
 </div>
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container text-center">
-        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
+        <span class="text-white">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 

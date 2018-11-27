@@ -74,9 +74,9 @@
     </form>
 </div>
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container text-center">
-        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
+        <span class="text-white">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 
