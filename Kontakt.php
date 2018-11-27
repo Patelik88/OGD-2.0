@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/sticky-footer.css">
-
     <title>OGD-2.0</title>
 
 </head>
@@ -44,39 +42,35 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_name">Vorname</label>
-                        <input id="form_name" type="text" name="vorname" class="form-control" placeholder="Vorname"
+                        <label for="vorname">Vorname</label>
+                        <input id="vorname" type="text" name="vorname" class="form-control" placeholder="Vorname"
                                required="required" data-error="Der Vorname wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_lastname">Nachname</label>
-                        <input id="form_lastname" type="text" name="nachname" class="form-control" placeholder="Nachname"
+                        <label for="nachname">Nachname</label>
+                        <input id="nachname" type="text" name="nachname" class="form-control" placeholder="Nachname"
                                required="required" data-error="Der Nachname wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_email">E-Mail</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail"
+                        <label for="email">E-Mail</label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="E-Mail"
                                required="required" data-error="Die E-Mail wird benötigt">
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="form_message">Nachricht</label>
-                        <textarea id="form_message" name="nachricht" class="form-control" placeholder="Nachricht"
+                        <label for="nachricht">Nachricht</label>
+                        <textarea id="nachricht" name="nachricht" class="form-control" placeholder="Nachricht"
                                   rows="4"
                                   required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
-                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -110,9 +104,9 @@ if($mail_senden){
 
 ?>
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container text-center">
-        <span class="text-muted">Dies ist ein Projekt mit OGD</span>
+        <span class="text-white">Dies ist ein Projekt mit OGD</span>
     </div>
 </footer>
 
