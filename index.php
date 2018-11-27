@@ -38,6 +38,9 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="spacetime.php">Zeit</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="Kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item">

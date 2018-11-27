@@ -564,7 +564,7 @@ function init() {
                     .html(getMName(d) + "<br> Auszahlung/Abschöpfung pro Person in CHF: " + getM2(d))
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
-                break;$
+                break;$;
 
             case "btn3":
                 graph.style("opacity", .9)
@@ -609,7 +609,7 @@ function init() {
         for (i = 0; i < muniArr.length; i++) {
             if (d.id === muniArr[i][0]) {
                 return muniArr[i][1] || d.id;
-                continue;
+
             }
         }
     }

@@ -39,7 +39,7 @@
 </nav>
 
 <div class="container my-4">
-    <form id="contact-form" method="post" action="send-mail-form.php" role="form">
+    <form id="contact-form" method="post" action="Kontakt.php" role="form">
         <div class="controls">
             <div class="row">
                 <div class="col-md-6">
@@ -80,12 +80,35 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Abschicken">
+                    <input type="submit" class="btn btn-success btn-send" value="Abschicken" name="submit">
                 </div>
             </div>
         </div>
     </form>
 </div>
+<?php
+
+// ======= Konfiguration:
+
+$empfaenger = "ogd20testmail@gmail.com";
+$nachname = $_POST['nachname'];
+$from = $_POST['email'];
+$text = $_POST['nachricht'];
+
+
+$mail_senden = mail($empfaenger, $nachname, $text, $from);
+
+
+//Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
+if($mail_senden){
+    header('Location: send-mail-form.php'); //Mail wurde gesendet
+    exit();
+} else{
+    header("Location: ".$url_fehler); //Fehler beim Senden
+    exit();
+}
+
+?>
 
 <footer class="footer">
     <div class="container text-center">
