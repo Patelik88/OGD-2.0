@@ -42,9 +42,6 @@
     color: white;
 }
 
-main.haupt{
-
-}
 
 .youtube {
     background: #bb0000;
@@ -57,6 +54,10 @@ div.container{
     margin-left: auto;
     height: 100%;
 }
-main.haupt{
-    margin-bottom: 50px;
+div.wtf{
+    height: 300px;
+
+}
+div.time{
+    position: fixed;
 }

@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/links.css">
 
     <script src="js/jquery.min.js"></script>
 
@@ -59,7 +60,7 @@
         </ul>
     </div>
 </nav>
-<main class="haupt">
+<main>
     <div class="time">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -68,7 +69,7 @@
 
     var spacetime = d3.select('body');
     var width = 960,
-        height = 500,
+        height = 600,
         radius = Math.min(width, height);
 
     var radii = {
@@ -201,7 +202,9 @@
 
 </script>
     </div>
+
 </main>
+<div class="wtf"></div>
 <footer>
     <div class="footer">
         <div class="footertext">
