@@ -24,7 +24,7 @@ mymap.scrollWheelZoom.disable();
 // control that shows state info on hover
 var info = L.control({position: 'topleft'});
 
-// Add zoom control
+// add zoom control
 var zoom = L.control.zoom({
     position: 'topright'
 });
@@ -55,7 +55,7 @@ function changeMapStyle(name) {
 
 function changeLayer(thisId) {
 
-    //remove data layer & legend
+    // remove data layer & legend
     if (wmsLayer !== '')
         mymap.removeLayer(wmsLayer);
 
@@ -68,6 +68,7 @@ function changeLayer(thisId) {
             transparent: true,
             crs: L.CRS.EPSG4326,
             opacity: 0.9,
+            
             identify: false,
             layers: dataLayerName
         }).addTo(mymap);
