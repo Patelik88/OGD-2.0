@@ -23,16 +23,10 @@
             integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
             crossorigin=""></script>
 
-    <!--    <script src="//d3js.org/d3.v3.min.js"></script>-->
-    <!--    <script src="//d3js.org/topojson.v1.min.js"></script>-->
-    <!---->
-    <!--    <script src="js/d3.v3.min.js"></script>-->
-    <!--    <script src="js/topojson.v1.min.js"></script>-->
-
     <title>OGD-2.0</title>
 
 </head>
-<body>
+<body onload="changeLayer('entwaesserungsgraben')">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Luftverschmutzung im Thurgau</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -56,17 +50,25 @@
 </nav>
 
 <div class="container-fluid my-4">
-    <div class="btn-group btn-group-lg" role="group">
-        <button type="button" id="btn2010" class="btn btn-secondary">2010</button>
-        <button type="button" id="btn2015" class="btn btn-secondary">2015</button>
-        <button type="button" id="btn2020" class="btn btn-secondary">2020</button>
+    <div class="btn-group">
+        <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Feinstaub - PM10
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="Immissionen_PM10_2010" onclick="changeLayer(this.id)" href="#">2010</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2015" onclick="changeLayer(this.id)" href="#">2015</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2020" onclick="changeLayer(this.id)" href="#">2020</a>
+        </div>
     </div>
-</div>
-
-<div class="container-fluid my-4">
-    <div class="btn-group btn-group" role="group">
-        <button type="button" id="btnPM10" class="btn btn-primary">PM10</button>
-        <button type="button" id="btnNO2" class="btn btn-primary">NO2</button>
+    <div class="btn-group">
+        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Stickstoffdioxid - NO2
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="Immissionen_NO2_2010" onclick="changeLayer(this.id)" href="#">2010</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2015" onclick="changeLayer(this.id)" href="#">2015</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2020" onclick="changeLayer(this.id)" href="#">2020</a>
+        </div>
     </div>
 </div>
 
@@ -80,9 +82,6 @@
     </div>
 </footer>
 
-<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-<script src="js/app.js"></script>
 <script src="js/leaflet.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -91,6 +90,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
