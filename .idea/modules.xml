@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/OGD-2.0.iml" filepath="$PROJECT_DIR$/.idea/OGD-2.0.iml" />
+      <module fileurl="file://X:/WasserParadies_Thurgau-master/.idea/ogd-gewaesserkataster.iml" filepath="X:/WasserParadies_Thurgau-master/.idea/ogd-gewaesserkataster.iml" />
     </modules>
   </component>
 </project>
