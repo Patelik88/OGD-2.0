@@ -208,34 +208,37 @@
 <footer>
     <div class="footer">
         <div class="footertext">
-        <div class="row">
+            <div class="row">
 
-            <div class="col-md-4">
-                <h4>Kontakt</h4>
-                <ul class="contact">
-                    <li>Unternehmensnetzwerk Frauenfeld</li>
-                    <li>Rolf Müller c/o Printimo AG</li>
-                    <li>Frauenfelderstrasse 21 A</li>
-                    <li>8404 Winterthur</li>
-                    <li>+41 79 359 94 00</li>
-                    <li><span id="_emoaddrId2"><span class="emo_address">Bitte Javascript aktivieren!</span></span></li>
-                </ul>
-            </div>
+                <div class="col-md-4">
+                    <h4>Kontakt</h4>
+                    <ul class="contact">
+                        <li>Informatikmittelschule Frauenfeld</li>
+                        <li>Ringstrasse 10</li>
+                        <li>8500 Frauenfeld</li>
+                        <li>+41 555 66 77</li>
+                    </ul>
+                </div>
 
-            <div class="col-md-4">
-                <h4>Partnerlinks</h4>
-                <ul class="partner">
-                    <li><a target="_blank" href="http://www.frauenfeld.ch">» Frauenfeld</a></li>
-                </ul>
-            </div>
+                <div class="col-md-4">
+                    <h4>Partnerlinks</h4>
+                    <ul class="partner">
+                        <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                    </ul>
+                </div>
 
-            <div class="col-md-4">
-                <h4>Sitemap</h4>
-                <ul class="sitemap">
-                    <li class="first active"><a href="/" >Home</a></li><li><a href="netzwerk/" >Netzwerk</a></li><li><a href="ueber-uns/unser-ursprung.html" >Über uns</a></li><li><a href="mitglieder/" >Mitglieder</a></li><li><a href="events2/veranstaltungsuebersicht/" >Events</a></li><li><a href="aktuell/" >Aktuelles</a></li><li class="last"><a href="kontakt.html" >Kontakt</a></li>
-                </ul>
+                <div class="col-md-4">
+                    <h4>Sitemap</h4>
+                    <ul class="sitemap">
+                        <li class="first active"><a href="index.php" >Home</a></li>
+                        <li><a href="#" >Zeit</a></li>
+                        <li class="last"><a href="Kontakt.php" >Kontakt</a></li>
+                        <li><a href="Impressum.php" >Impressum</a></li>
+
+                    </ul>
+                </div>
+
             </div>
-        </div>
         </div>
     </div>
 </footer>

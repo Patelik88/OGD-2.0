@@ -4,10 +4,17 @@ div.footer{
     left: 0;
     bottom: 0;
     width: 100%;
+    text-decoration: none;
 }
 div.footertext{
     padding-top: 20px;
 width: 90%;
     margin-left: auto;
     margin-top: auto;
+
+}
+
+div.footer.a {
+    text-decoration: none;
+    list-style: none;
 }
