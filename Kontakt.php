@@ -119,8 +119,8 @@
                         <ul class="sitemap">
                             <li class="first active"><a href="/" >Home</a></li>
                             <li><a href="spacetime.php" >Zeit</a></li>
-                            <li class="last"><a href="#" >Kontakt</a></li>
-                            <li><a href="Impressum.php" >Impressum</a></li>
+                            <li><a href="#" >Kontakt</a></li>
+                            <li class="last"><a href="Impressum.php" >Impressum</a></li>
 
                         </ul>
                     </div>

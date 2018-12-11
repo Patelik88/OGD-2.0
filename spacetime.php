@@ -61,15 +61,15 @@
     </div>
 </nav>
 <main>
-    <div class="time">
+    <div id="time">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
     var now = d3.time.year.floor(new Date());
 
     var spacetime = d3.select('body');
-    var width = 960,
-        height = 600,
+    var width = 1100,
+        height = 450,
         radius = Math.min(width, height);
 
     var radii = {
