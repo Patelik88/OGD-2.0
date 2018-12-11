@@ -45,15 +45,15 @@
 
 
 <div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="google"><i class="fa fa-google"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.youtube.com/channel/UCJxYNpGv_U8ReI9PhQp5qDA" class="youtube"><i class="fa fa-youtube"></i></a>
+    <a href="https://de-de.facebook.com/kt.thurgau/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/kanton_thurgau?lang=de" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://ogd.tg.ch" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/ogd-tg-312727176/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UCROgfPUdXZ41UP52obBbe-g" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
 
 <main class="haupt">
-    <div class="container">
+    <div class="containeri">
         <div class="row">
             <div class="col">
                 <br>
@@ -71,52 +71,75 @@
         <div class="row">
             <div class="col">
                 <h3>Kontaktadresse</h3>
-                <p>IMS Frauenfeld</p>
-                <p>Ringstrasse 10</p>
-                <p>CH-8501 Frauenfeld</p>
+                <br>
+                <p>IMS Frauenfeld <br>
+                    Ringstrasse 10 <br>
+                    CH-8501 Frauenfeld</p>
             </div>
             <div class="col">
                 <h3>Informationen</h3>
-                <p>Telefon: +41 79 123 45 67</p>
-                <p>E-Mail: ogd20testmail@gmail.com</p>
+                <br>
+                <p>Telefon: +41 79 123 45 67 <br>
+                    E-Mail: ogd20testmail@gmail.com</p>
+                <br>
+                <br>
             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text">
+                <h3>Der Zweck der Seite</h3>
+                <p>Mit den Daten von <a href="https://ogd.tg.ch">Open Government Data Thurgau</a> werden wir eine Web-Appliaktion entwickeln, die die Luftschadstoffbelastung im Kanton Thurgau ersichlich macht. Der Benutzer kann zwischen den Jahren 2010, 2015 und 2020 und zwischen Stickstoffdioxid und Feinstaub auswählen, welches Jahr und welches Schadstoff auf der Karte erscheinen soll.
+
+                    Unsere Aufgabe ist, die Web-Applikation möglichst gut umzusetzen und diese ergonomisch wie möglich den Interessenten freizugeben.</p>
+            </div>
+            </div>
+            <div class="col">
+                <h3>Unser Team</h3>
+                <br>
+                <p>Ali Ekici<br>
+                    Bleart Lema <br>
+                    Pascal Leone <br>
+                    Patrik Studer</p>
+            </div>
+        </div>
 </main>
 
 <footer>
     <div class="footer">
         <div class="footertext">
-        <div class="row">
+            <div class="row">
 
-            <div class="col-md-4">
-                <h4>Kontakt</h4>
-                <ul class="contact">
-                    <li>Informatikmittelschule Frauenfeld</li>
-                    <li>Ringstrasse 10</li>
-                    <li>8500 Frauenfeld</li>
-                    <li>+41 555 66 77</li>
-                </ul>
+                <div class="col-md-4">
+                    <h4>Kontakt</h4>
+                    <ul class="contact">
+                        <li>Informatikmittelschule Frauenfeld</li>
+                        <li>Ringstrasse 10</li>
+                        <li>8500 Frauenfeld</li>
+                        <li>+41 555 66 77</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Partnerlinks</h4>
+                    <ul class="partner">
+                        <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                        <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Sitemap</h4>
+                    <ul class="sitemap">
+                        <li class="first active"><a href="/">Home</a></li>
+                        <li><a href="spacetime.php">Zeit</a></li>
+                        <li class="last"><a href="Kontakt.php">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+
+                    </ul>
+                </div>
+
             </div>
-
-            <div class="col-md-4">
-                <h4>Partnerlinks</h4>
-                <ul class="partner">
-                    <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
-                    <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4">
-                <h4>Sitemap</h4>
-                <ul class="sitemap">
-                    <li class="first active"><a href="/" >Home</a></li>
-                    <li><a href="spacetime.php" >Zeit</a></li>
-                    <li class="last"><a href="Kontakt.php" >Kontakt</a></li>
-                    <li><a href="#" >Impressum</a></li>
-
-                </ul>
-            </div>
-
-        </div>
         </div>
     </div>
 </footer>
