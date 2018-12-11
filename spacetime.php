@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/links.css">
-
+    <link rel="stylesheet" href="css/digitalclock.css">
     <script src="js/jquery.min.js"></script>
 
     <script src="//d3js.org/d3.v3.min.js"></script>
@@ -21,6 +21,9 @@
 
     <script src="js/d3.v3.min.js"></script>
     <script src="js/topojson.v1.min.js"></script>
+    <script src="js/digitalclock.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <title>OGD-2.0</title>
 
@@ -61,15 +64,15 @@
     </div>
 </nav>
 <main>
-    <div id="time">
+    <div id="time" class="spacetime">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-
+    window.onresize = function(){ location.reload(); }
     var now = d3.time.year.floor(new Date());
 
     var spacetime = d3.select('body');
-    var width = 1100,
-        height = 450,
+    var width = window.innerWidth,
+        height = window.innerHeight / 1.7,
         radius = Math.min(width, height);
 
     var radii = {
@@ -84,6 +87,7 @@
     var svg = spacetime.append("svg")
         .attr("width", width)
         .attr("height", height)
+
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
@@ -202,6 +206,40 @@
 
 </script>
     </div>
+    <div id="MyClockDisplay" class="clock">
+        <script>
+            function showTime(){
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if(h == 0){
+            h = 12;
+            }
+
+            if(h > 12){
+            h = h - 12;
+            session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+            }
+
+            showTime();
+        </script>
+    </div>
+
 
 </main>
 <div class="wtf"></div>
@@ -224,6 +262,7 @@
                     <h4>Partnerlinks</h4>
                     <ul class="partner">
                         <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                        <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
                     </ul>
                 </div>
 

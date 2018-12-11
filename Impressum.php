@@ -101,6 +101,7 @@
                 <h4>Partnerlinks</h4>
                 <ul class="partner">
                     <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                    <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
                 </ul>
             </div>
 
