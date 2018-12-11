@@ -51,23 +51,29 @@
 
 <div class="container-fluid my-4">
     <div class="btn-group">
-        <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
             Feinstaub - PM10
         </button>
         <div class="dropdown-menu">
+            <a class="dropdown-item" id="Immissionen_PM10_2005" onclick="changeLayer(this.id)" href="#">2005</a>
             <a class="dropdown-item" id="Immissionen_PM10_2010" onclick="changeLayer(this.id)" href="#">2010</a>
             <a class="dropdown-item" id="Immissionen_PM10_2015" onclick="changeLayer(this.id)" href="#">2015</a>
             <a class="dropdown-item" id="Immissionen_PM10_2020" onclick="changeLayer(this.id)" href="#">2020</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2030" onclick="changeLayer(this.id)" href="#">2030</a>
         </div>
     </div>
     <div class="btn-group">
-        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
             Stickstoffdioxid - NO2
         </button>
         <div class="dropdown-menu">
+            <a class="dropdown-item" id="Immissionen_NO2_2005" onclick="changeLayer(this.id)" href="#">2005</a>
             <a class="dropdown-item" id="Immissionen_NO2_2010" onclick="changeLayer(this.id)" href="#">2010</a>
             <a class="dropdown-item" id="Immissionen_NO2_2015" onclick="changeLayer(this.id)" href="#">2015</a>
             <a class="dropdown-item" id="Immissionen_NO2_2020" onclick="changeLayer(this.id)" href="#">2020</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2030" onclick="changeLayer(this.id)" href="#">2030</a>
         </div>
     </div>
 </div>
