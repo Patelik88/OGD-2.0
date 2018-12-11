@@ -11,7 +11,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="js/jquery.min.js"></script>
 
@@ -26,7 +26,7 @@
     <title>OGD-2.0</title>
 
 </head>
-<body onload="changeLayer('entwaesserungsgraben')">
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Luftverschmutzung im Thurgau</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -38,6 +38,9 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="spacetime.php">Zeit</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Kontakt.php">Kontakt</a>
@@ -81,13 +84,56 @@
 <div id="container">
     <div id="graph"></div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<footer class="footer bg-dark">
-    <div class="container text-center">
-        <span class="text-white">Dies ist ein Projekt mit OGD</span>
+<footer>
+    <div class="footer">
+        <div class="footertext">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h4>Kontakt</h4>
+                    <ul class="contact">
+                        <li>Informatikmittelschule Frauenfeld</li>
+                        <li>Ringstrasse 10</li>
+                        <li>8500 Frauenfeld</li>
+                        <li>+41 555 66 77</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Partnerlinks</h4>
+                    <ul class="partner">
+                        <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                        <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Sitemap</h4>
+                    <ul class="sitemap">
+                        <li class="first active"><a href="#" >Home</a></li>
+                        <li><a href="spacetime.php" >Zeit</a></li>
+                        <li class="last"><a href="Kontakt.php" >Kontakt</a></li>
+                        <li><a href="Impressum.php" >Impressum</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
     </div>
 </footer>
 
+<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+<!--<script src="js/main.js"></script>-->
+<script src="js/app.js"></script>
 <script src="js/leaflet.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

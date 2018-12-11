@@ -1,0 +1,35 @@
+div.footer{
+    background-color: #999999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #333333;
+
+}
+div.footertext{
+    padding-top: 20px;
+width: 90%;
+    margin-left: auto;
+    margin-top: auto;
+
+}
+div.footertext li {
+    list-style: none;
+    margin-left: -12%;
+}
+div.footertext a{
+    color: #333333;
+    text-decoration: none;
+
+}
+
+ul.sitemap li{
+    border-bottom: 1px solid #333333;
+    list-style: none;
+    width: 60%;
+
+
+
+}
+
