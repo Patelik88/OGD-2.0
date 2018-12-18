@@ -59,11 +59,16 @@
             Feinstaub - PM10
         </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" id="Immissionen_PM10_2005" onclick="changeLayer(this.id)" href="#">2005</a>
-            <a class="dropdown-item" id="Immissionen_PM10_2010" onclick="changeLayer(this.id)" href="#">2010</a>
-            <a class="dropdown-item" id="Immissionen_PM10_2015" onclick="changeLayer(this.id)" href="#">2015</a>
-            <a class="dropdown-item" id="Immissionen_PM10_2020" onclick="changeLayer(this.id)" href="#">2020</a>
-            <a class="dropdown-item" id="Immissionen_PM10_2030" onclick="changeLayer(this.id)" href="#">2030</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2005" onclick="changeLayer(this.id), hideno2()"
+               href="#">2005</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2010" onclick="changeLayer(this.id), hideno2()"
+               href="#">2010</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2015" onclick="changeLayer(this.id), hideno2()"
+               href="#">2015</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2020" onclick="changeLayer(this.id), hideno2()"
+               href="#">2020</a>
+            <a class="dropdown-item" id="Immissionen_PM10_2030" onclick="changeLayer(this.id), hideno2()"
+               href="#">2030</a>
         </div>
     </div>
     <div class="btn-group">
@@ -72,17 +77,48 @@
             Stickstoffdioxid - NO2
         </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" id="Immissionen_NO2_2005" onclick="changeLayer(this.id)" href="#">2005</a>
-            <a class="dropdown-item" id="Immissionen_NO2_2010" onclick="changeLayer(this.id)" href="#">2010</a>
-            <a class="dropdown-item" id="Immissionen_NO2_2015" onclick="changeLayer(this.id)" href="#">2015</a>
-            <a class="dropdown-item" id="Immissionen_NO2_2020" onclick="changeLayer(this.id)" href="#">2020</a>
-            <a class="dropdown-item" id="Immissionen_NO2_2030" onclick="changeLayer(this.id)" href="#">2030</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2005" onclick="changeLayer(this.id), hidepm10()"
+               href="#">2005</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2010" onclick="changeLayer(this.id), hidepm10()"
+               href="#">2010</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2015" onclick="changeLayer(this.id), hidepm10()"
+               href="#">2015</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2020" onclick="changeLayer(this.id), hidepm10()"
+               href="#">2020</a>
+            <a class="dropdown-item" id="Immissionen_NO2_2030" onclick="changeLayer(this.id), hidepm10()"
+               href="#">2030</a>
         </div>
+    </div>
+    <div class="btn">
+        <button class="btn btn-dark btn-lg" type="button"
+                onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            Legende
+        </button>
     </div>
 </div>
 
 <div id="container">
-    <div id="graph"></div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/index.php">
+            <div class="modalcontainer container">
+                <p id="infotext" class="text-center">Wählen Sie die Daten aus!</p>
+                <img id="imgpm10" class="legendimg img-fluid rounded float-left"
+                     src="img/luftbelastung-stickstoff-pm10.png"
+                     alt="PM10">
+                <img id="imgno2" class="legendimg img-fluid rounded float-left"
+                     src="img/luftbelastung-stickstoff-no2.png"
+                     alt="NO2">
+            </div>
+            <div class="container" style="width: 300px; border-radius: 5px">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn btn btn-danger">
+                    Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="graph">
+    </div>
 </div>
 
 <br>
@@ -97,7 +133,6 @@
     <div class="footer">
         <div class="footertext">
             <div class="row">
-
                 <div class="col-md-4">
                     <h4>Kontakt</h4>
                     <ul class="contact">
@@ -107,7 +142,6 @@
                         <li>+41 555 66 77</li>
                     </ul>
                 </div>
-
                 <div class="col-md-4">
                     <h4>Partnerlinks</h4>
                     <ul class="partner">
@@ -115,25 +149,20 @@
                         <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4">
                     <h4>Sitemap</h4>
                     <ul class="sitemap">
-                        <li class="first active"><a href="#" >Home</a></li>
-                        <li><a href="spacetime.php" >Zeit</a></li>
-                        <li class="last"><a href="Kontakt.php" >Kontakt</a></li>
-                        <li><a href="Impressum.php" >Impressum</a></li>
-
+                        <li class="first active"><a href="#">Home</a></li>
+                        <li><a href="spacetime.php">Zeit</a></li>
+                        <li class="last"><a href="Kontakt.php">Kontakt</a></li>
+                        <li><a href="Impressum.php">Impressum</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
 </footer>
 
-<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
-<!--<script src="js/main.js"></script>-->
 <script src="js/app.js"></script>
 <script src="js/leaflet.js"></script>
 

@@ -1,14 +1,42 @@
 // global variables
 var mapname = 'mapbox.light';
 // streets, satellite
-var dataLayerName = 'Immissionen_PM10_2020';
+var dataLayerName = 'none';
 var wmsLayer = '';
 var maplayer = '';
 
+var pm10 = document.getElementById('imgpm10');
+var no2 = document.getElementById('imgno2');
+var info = document.getElementById('infotext');
+
+function hidepm10() {
+    no2.style.display = 'block';
+    pm10.style.display = 'none';
+    info.style.display = 'none';
+}
+
+function hideno2() {
+    no2.style.display = 'none';
+    pm10.style.display = 'block';
+    info.style.display = 'none';
+}
+
+// get the modal
+var modal = document.getElementById('id01');
+
+// when the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
 // restrict view of map
-const topLeftCorner = L.latLng(47.7157, 8.6538);
-const bottomRightCorner = L.latLng(47.3730, 9.47);
-const maxBounds = L.latLngBounds(topLeftCorner, bottomRightCorner);
+const maxBounds = L.latLngBounds(
+    L.latLng(47.7157, 8.6538),
+    L.latLng(47.3730, 9.47)
+);
 
 var map = L.map('graph', {
     maxBounds: maxBounds,
@@ -35,7 +63,6 @@ function changeMapStyle(name) {
 }
 
 function changeLayer(thisId) {
-
     // remove data layer & legend
     if (wmsLayer !== '') {
         map.removeLayer(wmsLayer);
@@ -48,11 +75,12 @@ function changeLayer(thisId) {
     wmsLayer = L.tileLayer.wms('http://map.geo.tg.ch//proxy/geofy_chsdi3/luftbelastung-stickstoff?access_key=YoW2syIQ4xe0ccJA&', {
         version: '1.3.0',
         format: 'image/png',
-        transparent: true,
-        tileSize: 2500,
         crs: L.CRS.EPSG4326,
         opacity: 1,
-        identify: false,
+        tileSize: 2500,
+        tiled: false,
+        transparent: true,
+        identify: true,
         layers: dataLayerName
     }).addTo(map);
 }
