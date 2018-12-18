@@ -43,6 +43,9 @@
 </nav>
 <main class="haupt">
 <div class="container my-4">
+    <h1>KONTAKTIEREN SIE UNS.</h1>
+    <h6>Falls Sie Fragen zu unserer Seite haben, dann füllen Sie einfach das Formular aus und senden Sie es ab. </h6>
+    
     <form id="contact-form" method="post" action="Kontakt.php" role="form">
         <div class="controls">
             <div class="row">
