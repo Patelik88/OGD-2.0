@@ -53,7 +53,7 @@
 </nav>
 
 <div class="container-fluid my-4">
-    <div class="btn-group my-2">
+    <div class="btn-group mb-2">
         <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
             Feinstaub - PM10
@@ -71,7 +71,7 @@
                href="#">2030</a>
         </div>
     </div>
-    <div class="btn-group">
+    <div class="btn-group mb-2">
         <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
             Stickstoffdioxid - NO2
@@ -89,7 +89,7 @@
                href="#">2030</a>
         </div>
     </div>
-    <div class="btn">
+    <div class="btn-group mb-2">
         <button class="btn btn-dark btn-lg" type="button"
                 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
             Legende
