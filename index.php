@@ -97,6 +97,37 @@
     </div>
 </div>
 
+<script>
+    // modal content
+    var pm10 = document.getElementById('imgpm10');
+    var no2 = document.getElementById('imgno2');
+    var info = document.getElementById('infotext');
+
+    // hide the legend for pm10 data when clicking on a no2 button
+    function hidepm10() {
+        no2.style.display = 'block';
+        pm10.style.display = 'none';
+        info.style.display = 'none';
+    }
+
+    // hide the legend for no2 data when clicking on a pm10 button
+    function hideno2() {
+        no2.style.display = 'none';
+        pm10.style.display = 'block';
+        info.style.display = 'none';
+    }
+
+    // get the modal
+    var modal = document.getElementById('id01');
+
+    // when the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
 <div id="container">
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/index.php">

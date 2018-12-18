@@ -1,36 +1,10 @@
 // global variables
 var mapname = 'mapbox.light';
+
 // streets, satellite
 var dataLayerName = 'none';
 var wmsLayer = '';
 var maplayer = '';
-
-var pm10 = document.getElementById('imgpm10');
-var no2 = document.getElementById('imgno2');
-var info = document.getElementById('infotext');
-
-function hidepm10() {
-    no2.style.display = 'block';
-    pm10.style.display = 'none';
-    info.style.display = 'none';
-}
-
-function hideno2() {
-    no2.style.display = 'none';
-    pm10.style.display = 'block';
-    info.style.display = 'none';
-}
-
-// get the modal
-var modal = document.getElementById('id01');
-
-// when the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 
 // restrict view of map
 const maxBounds = L.latLngBounds(
@@ -38,6 +12,7 @@ const maxBounds = L.latLngBounds(
     L.latLng(47.3730, 9.47)
 );
 
+// set the map
 var map = L.map('graph', {
     maxBounds: maxBounds,
     maxZoom: 14,
@@ -62,6 +37,7 @@ function changeMapStyle(name) {
     }
 }
 
+// change the layer of the map
 function changeLayer(thisId) {
     // remove data layer & legend
     if (wmsLayer !== '') {

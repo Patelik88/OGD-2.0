@@ -93,8 +93,8 @@
                     <h3>Der Zweck der Seite</h3>
                     <p>Mit den Daten von <a href="https://ogd.tg.ch">Open Government Data Thurgau</a> werden wir eine
                         Web-Appliaktion entwickeln, die die Luftschadstoffbelastung im Kanton Thurgau ersichlich macht.
-                        Der Benutzer kann zwischen den Jahren 2010, 2015 und 2020 und zwischen Stickstoffdioxid und
-                        Feinstaub auswählen, welches Jahr und welches Schadstoff auf der Karte erscheinen soll.
+                        Der Benutzer kann zwischen den Jahren 2005, 2010, 2015, 2020, 2030 und zwischen Stickstoffdioxid und
+                        Feinstaub auswählen, welches Jahr und welcher Schadstoff auf der Karte erscheinen soll.
 
                         Unsere Aufgabe ist, die Web-Applikation möglichst gut umzusetzen und diese ergonomisch wie
                         möglich den Interessenten freizugeben.</p>

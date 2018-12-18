@@ -90,7 +90,6 @@ button:hover {
 
 /* change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-
     .cancelbtn {
         width: 100%;
     }
@@ -102,10 +101,6 @@ button:hover {
 
 #infotext {
     padding-left: 0;
-}
-
-#time {
-    margin-left: 20px;
 }
 
 .textmodal {

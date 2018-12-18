@@ -76,7 +76,7 @@
         <form class="modal-content animate" action="/spacetime.php">
             <div class="modalcontainer container textmodal">
                 <p id="infotext" class="text-center">Damit Sie die Zeit nicht vergessen, wird auf dieser Seite die Zeit angezeigt.
-                    Zudem können sehen in welcher Position die Sonne (Gelb) zur Erde (Blau) steht und wie die der Mond (Grau) zur Erde steht.</p>
+                    Zudem können Sie sehen, in welcher Position die Sonne (Gelb) zur Erde (Blau) steht und wie die der Mond (Grau) zur Erde steht.</p>
             </div>
             <div class="container customcontainer" style="border-radius: 5px">
                 <button type="button" onclick="document.getElementById('infoBox').style.display='none'"
@@ -111,7 +111,7 @@
             var now = d3.time.year.floor(new Date());
 
             var spacetime = d3.select('body');
-            var width = window.innerWidth - 20,
+            var width = window.innerWidth,
                 height = window.innerHeight / 1.7,
                 radius = Math.min(width, height);
 
@@ -273,16 +273,12 @@
                 document.getElementById("MyClockDisplay").textContent = time;
 
                 setTimeout(showTime, 1000);
-
             }
 
             showTime();
         </script>
     </div>
-
-
 </main>
-<div class="wtf"></div>
 
 <footer>
     <div class="footer">
