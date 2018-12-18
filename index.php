@@ -53,7 +53,7 @@
 </nav>
 
 <div class="container-fluid my-4">
-    <div class="btn-group">
+    <div class="btn-group my-2">
         <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
             Feinstaub - PM10
