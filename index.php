@@ -95,11 +95,6 @@
             Legende
         </button>
     </div>
-
-    <script>
-
-    </script>
-
 </div>
 
 <div id="container">
