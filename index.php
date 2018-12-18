@@ -112,7 +112,7 @@
             <div class="container" style="width: 300px; border-radius: 5px">
                 <button type="button" onclick="document.getElementById('id01').style.display='none'"
                         class="cancelbtn btn btn-danger">
-                    Abbrechen
+                    Schliessen
                 </button>
             </div>
         </form>
@@ -155,7 +155,6 @@
     </div>
 </footer>
 
-<script src="js/app.js"></script>
 <script src="js/leaflet.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

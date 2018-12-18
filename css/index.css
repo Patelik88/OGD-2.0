@@ -95,3 +95,19 @@ button:hover {
         width: 100%;
     }
 }
+
+#infoBox {
+    display: none;
+}
+
+#infotext {
+    padding-left: 0;
+}
+
+#time {
+    margin-left: 20px;
+}
+
+.textmodal {
+    width: 100% !important;
+}

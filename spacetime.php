@@ -63,47 +63,45 @@
         </ul>
     </div>
 </nav>
+
+<div class="btn-group mx-5">
+    <button class="btn btn-dark btn-lg" type="button" onclick="document.getElementById('infoBox').style.display='block'" style="border-radius: 50%;
+    position:absolute;">
+        <i class="fa fa-info-circle"></i>
+    </button>
+</div>
+
 <main>
-
-    <button style="font-size:20px" type="button" onclick="buttonShow()"><i class="fa fa-info-circle"></i></button>
-
-    <!-- Und dann die Info-Box -->
-    <div id="infoBox"
-         style="width: 380px; padding: 5px; background-color: white;text-align: left; border: 2px solid #CCCCCC">
-        Das Sie ja nicht die Zeit vergessen, wird auf dieser Seite die Zeit angezeigt.
-        Zudem können sehen in welcher Position die Sonne (Gelb) zur Erde (Blau) steht
-        und wie die der Mond (Grau) zur Erde steht.
-        <p style="text-align: center; margin-top: 20px">
-            <button type="button" onclick="buttonHide()">Schließen</button>
-        </p>
+    <div id="infoBox" class="modal">
+        <form class="modal-content animate" action="/spacetime.php">
+            <div class="modalcontainer container textmodal">
+                <p id="infotext" class="text-center">Damit Sie die Zeit nicht vergessen, wird auf dieser Seite die Zeit angezeigt.
+                    Zudem können sehen in welcher Position die Sonne (Gelb) zur Erde (Blau) steht und wie die der Mond (Grau) zur Erde steht.</p>
+            </div>
+            <div class="container customcontainer" style="border-radius: 5px">
+                <button type="button" onclick="document.getElementById('infoBox').style.display='none'"
+                        class="cancelbtn btn btn-danger">
+                    Schliessen
+                </button>
+            </div>
+        </form>
     </div>
 
-    <!-- der JavaScript-Code -->
-    <script type="text/javascript">
-        <!--
-        var info = document.getElementById("infoBox");
-        info.style.display = "none"; // Box ausblenden
-        info.style.position = "absolute";
-        info.style.zIndex = 999;
-        // Entweder fix auf der Seite platziert
-        // info.style.left = "50px";
-        // info.style.top = "100px";
-        // Oder ein definiertes Stückchen unter dem Knopf
-        info.style.marginTop = "10px";
+    <script>
 
-        function buttonShow() {
-            // Infobox anzeigen
-            info.style.display = "";
+        // get the modal
+        var modal = document.getElementById('infoBox');
+
+        // when the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
 
-        function buttonHide() {
-            // Infobox wieder ausblenden
-            info.style.display = "none";
-        }
-
-        //-->
     </script>
-    <div id="time" class="spacetime">
+
+    <div id="time" class="spacetime d-flex justify-content-center">
 
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script>
