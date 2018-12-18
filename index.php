@@ -112,7 +112,7 @@
             <div class="container" style="width: 300px; border-radius: 5px">
                 <button type="button" onclick="document.getElementById('id01').style.display='none'"
                         class="cancelbtn btn btn-danger">
-                    Cancel
+                    Abbrechen
                 </button>
             </div>
         </form>
