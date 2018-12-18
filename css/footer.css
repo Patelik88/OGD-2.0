@@ -1,11 +1,9 @@
 div.footer {
     background-color: #999999;
-    position: sticky;
+    position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
     color: #333333;
-
 }
 
 div.footertext {
@@ -13,7 +11,8 @@ div.footertext {
     width: 90%;
     margin-left: auto;
     margin-top: auto;
-
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 div.footertext li {
@@ -34,3 +33,31 @@ ul.sitemap li {
 
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.haupt {
+    padding-left: 5%;
+    padding-right: 5%;
+}

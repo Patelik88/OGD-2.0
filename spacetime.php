@@ -55,10 +55,10 @@
                 <a class="nav-link" href="#">Zeit<span class="sr-only">(current)</span></a
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Kontakt.php">Kontakt</a>
+                <a class="nav-link" href="kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Impressum.php">Impressum</a>
+                <a class="nav-link" href="impressum.php">Impressum</a>
             </li>
         </ul>
     </div>
@@ -113,7 +113,7 @@
             var now = d3.time.year.floor(new Date());
 
             var spacetime = d3.select('body');
-            var width = window.innerWidth,
+            var width = window.innerWidth - 20,
                 height = window.innerHeight / 1.7,
                 radius = Math.min(width, height);
 
@@ -285,6 +285,7 @@
 
 </main>
 <div class="wtf"></div>
+
 <footer>
     <div class="footer">
         <div class="footertext">
@@ -313,8 +314,8 @@
                     <ul class="sitemap">
                         <li class="first active"><a href="index.php">Home</a></li>
                         <li><a href="#">Zeit</a></li>
-                        <li class="last"><a href="Kontakt.php">Kontakt</a></li>
-                        <li><a href="Impressum.php">Impressum</a></li>
+                        <li class="last"><a href="kontakt.php">Kontakt</a></li>
+                        <li><a href="impressum.php">Impressum</a></li>
 
                     </ul>
                 </div>

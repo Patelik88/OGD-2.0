@@ -58,10 +58,10 @@
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Kontakt.php">Kontakt</a>
+                <a class="nav-link" href="kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Impressum.php">Impressum</a>
+                <a class="nav-link" href="impressum.php">Impressum</a>
             </li>
         </ul>
     </div>

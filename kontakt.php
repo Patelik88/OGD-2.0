@@ -36,7 +36,7 @@
                 <a class="nav-link" href="#">Kontakt <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Impressum.php">Impressum</a>
+                <a class="nav-link" href="impressum.php">Impressum</a>
             </li>
         </ul>
     </div>
@@ -45,7 +45,7 @@
     <div class="container my-4">
         <h1>Kontaktieren Sie uns.</h1>
         <h6>Falls Sie Fragen zu unserer Website haben, dann Füllen Sie einfach das Formular aus und senden Sie es ab.</h6>
-        <form id="contact-form" method="post" action="Kontakt.php" role="form">
+        <form id="contact-form" method="post" action="kontakt.php" role="form">
             <div class="controls">
                 <div class="row">
                     <div class="col-md-6">
@@ -95,6 +95,7 @@
         </form>
     </div>
 </main>
+
 <footer>
     <footer>
         <div class="footer">
@@ -126,7 +127,7 @@
                             <li class="first active"><a href="/">Home</a></li>
                             <li><a href="spacetime.php">Zeit</a></li>
                             <li><a href="#">Kontakt</a></li>
-                            <li class="last"><a href="Impressum.php">Impressum</a></li>
+                            <li class="last"><a href="impressum.php">Impressum</a></li>
 
                         </ul>
                     </div>

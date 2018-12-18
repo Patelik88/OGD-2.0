@@ -6,8 +6,10 @@
 
     <link rel="shortcut icon" href="http://grants.ulbsibiu.ro/sidpop/blocks/continut_imagine/images/x.png"
           type="image/x-icon"/>
-    <link rel="stylesheet" href="css/links.css">
+
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/links.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -34,7 +36,7 @@
                 <a class="nav-link" href="spacetime.php">Zeit</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Kontakt.php">Kontakt</a>
+                <a class="nav-link" href="kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">Impressum<span class="sr-only">(current)</span></a>
@@ -113,7 +115,6 @@
     <div class="footer">
         <div class="footertext">
             <div class="row">
-
                 <div class="col-md-4">
                     <h4>Kontakt</h4>
                     <ul class="contact">
@@ -137,7 +138,7 @@
                     <ul class="sitemap">
                         <li class="first active"><a href="/">Home</a></li>
                         <li><a href="spacetime.php">Zeit</a></li>
-                        <li class="last"><a href="Kontakt.php">Kontakt</a></li>
+                        <li class="last"><a href="kontakt.php">Kontakt</a></li>
                         <li><a href="#">Impressum</a></li>
 
                     </ul>
