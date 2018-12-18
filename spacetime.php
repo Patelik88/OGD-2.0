@@ -6,6 +6,8 @@
 
     <link rel="shortcut icon" href="http://grants.ulbsibiu.ro/sidpop/blocks/continut_imagine/images/x.png"
           type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -64,7 +66,44 @@
     </div>
 </nav>
 <main>
+
+    <button style="font-size:20px"  type="button" onclick="buttonShow()"><i class="fa fa-info-circle"></i></button>
+
+    <!-- Und dann die Info-Box -->
+    <div id="infoBox" style="width: 400px; padding: 5px; background-color: white;text-align: center; border: 2px solid #CCCCCC">
+        Das Sie ja nicht die Zeit vergessen, wird auf dieser Seite die Zeit anezeigt. <br>
+        Zudem können sehen in welcher Position die Sonne(Gelb) zur Erde(Blau) steht <br>
+        und wie die der Mond zur Erde steht.
+        <p style="text-align: center; margin-top: 20px">
+            <button type="button" onclick="buttonHide()">Schließen</button>
+        </p>
+    </div>
+
+    <!-- Der JavaScript-Code -->
+    <script type="text/javascript">
+        <!--
+        var info = document.getElementById("infoBox");
+        info.style.display = "none"; // Box ausblenden
+        info.style.position = "absolute";
+        info.style.zIndex = 999;
+        // Entweder fix auf der Seite platziert
+        // info.style.left = "50px";
+        // info.style.top = "100px";
+        // Oder ein definiertes Stückchen unter dem Knopf
+        info.style.marginTop = "10px";
+
+        function buttonShow() {
+            // Infobox anzeigen
+            info.style.display = "";
+        }
+        function buttonHide() {
+            // Infobox wieder ausblenden
+            info.style.display = "none";
+        }
+        //-->
+    </script>
     <div id="time" class="spacetime">
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
     window.onresize = function(){ location.reload(); }
