@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Abschicken" name="submit">
+                    <input type="submit" class="btn btn-success btn-send" value="Abschicken" name="Abschicken" id="Abschicken">
                 </div>
             </div>
         </div>
@@ -132,23 +132,32 @@
     </footer>
 <?php
 
-// ======= Konfiguration:
-
+function sendmail(){
 $empfaenger = "ogd20testmail@gmail.com";
 $nachname = $_POST['nachname'];
+$vorname = $_POST['vorname'];
 $from = $_POST['email'];
 $text = $_POST['nachricht'];
+$msg = wordwrap($text, 70);
 
-        $mail_senden = mail($empfaenger, $nachname, $text, $from);
+mail($empfaenger, $msg, $from);
+}
+function sendenerfolgreich(){
 
-//Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
-if($mail_senden){
     header('Location: send-mail-form.php'); //Mail wurde gesendet
     exit();
-} else{
-    header("Location: ".$url_fehler); //Fehler beim Senden
-    exit();
 }
+
+
+if(array_key_exists('Abschicken',$_POST)){
+sendmail();
+header('Location: send-mail-form.php');
+}
+
+
+//Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
+
+
 
 ?>
 
