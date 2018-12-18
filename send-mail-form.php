@@ -12,7 +12,6 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/sticky-footer.css">
-
     <link rel="stylesheet" href="css/stylesheet.css">
 
     <title>OGD-2.0</title>
