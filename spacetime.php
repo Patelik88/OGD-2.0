@@ -69,10 +69,10 @@
 
     <!-- Und dann die Info-Box -->
     <div id="infoBox"
-         style="width: 400px; padding: 5px; background-color: white;text-align: center; border: 2px solid #CCCCCC">
-        Das Sie ja nicht die Zeit vergessen, wird auf dieser Seite die Zeit angezeigt. <br>
-        Zudem können sehen in welcher Position die Sonne ( Gelb ) zur Erde ( Blau ) steht <br>
-        und wie die der Mond zur Erde steht.
+         style="width: 380px; padding: 5px; background-color: white;text-align: left; border: 2px solid #CCCCCC">
+        Das Sie ja nicht die Zeit vergessen, wird auf dieser Seite die Zeit angezeigt.
+        Zudem können sehen in welcher Position die Sonne (Gelb) zur Erde (Blau) steht
+        und wie die der Mond (Grau) zur Erde steht.
         <p style="text-align: center; margin-top: 20px">
             <button type="button" onclick="buttonHide()">Schließen</button>
         </p>
