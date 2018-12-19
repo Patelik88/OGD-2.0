@@ -66,12 +66,6 @@ footer {
     height: 0;
 }
 
-@media screen and (max-width: 630px) {
-    .footer {
-        margin-top: 20vh !important;
-    }
-}
-
 
 @media screen and (max-width: 630px) {
     .footer {
