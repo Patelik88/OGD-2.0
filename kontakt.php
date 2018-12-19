@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-
     <link rel="stylesheet" href="css/footer.css">
 
     <title>OGD-2.0</title>
@@ -41,6 +40,7 @@
         </ul>
     </div>
 </nav>
+
 <main class="haupt">
     <div class="container my-4">
         <h1>Kontaktieren Sie uns.</h1>

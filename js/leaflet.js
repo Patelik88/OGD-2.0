@@ -1,7 +1,7 @@
 // global variables
 var mapname = 'mapbox.light';
+// streets, satellite, light
 
-// streets, satellite
 var dataLayerName = 'none';
 var wmsLayer = '';
 var maplayer = '';
@@ -44,9 +44,10 @@ const maxBounds = L.latLngBounds(
 // set the map
 var map = L.map('graph', {
     maxBounds: maxBounds,
+    gestureHandling: true,
     maxZoom: 14,
     minZoom: 11,
-    zoomControl: false,
+    zoomControl: true,
     attributionControl: false,
 }).setView([47.54, 9.075], 11);
 
@@ -89,6 +90,9 @@ function changeLayer(thisId) {
         layers: dataLayerName
     }).addTo(map);
 }
+
+// disable scroll wheel
+map.scrollWheelZoom.disable();
 
 // scale bar
 L.control.scale().addTo(map);
