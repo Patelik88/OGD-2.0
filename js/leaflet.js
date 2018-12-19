@@ -36,7 +36,7 @@ var map = L.map('graph', {
     maxBounds: maxBounds,
     maxZoom: 14,
     minZoom: 11,
-    zoomControl: true,
+    zoomControl: false,
     attributionControl: false,
     gestureHandling: true,
 }).setView([47.54, 9.075], 11);
@@ -77,7 +77,7 @@ function changeLayer(thisId) {
         version: '1.3.0',
         format: 'image/png',
         crs: L.CRS.EPSG4326,
-        opacity: 1,
+        opacity: 0.8,
         tileSize: 2500,
         tiled: false,
         transparent: true,
@@ -88,6 +88,12 @@ function changeLayer(thisId) {
 
 // disable scroll wheel
 map.scrollWheelZoom.disable();
+
+// zoom control
+var zoom = L.control.zoom({
+    position: 'topright'
+});
+zoom.addTo(map);
 
 // scale bar
 L.control.scale().addTo(map);
