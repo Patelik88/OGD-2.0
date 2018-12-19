@@ -125,7 +125,7 @@
 </div>
 
 <footer>
-    <div class="footer">
+    <div class="container-fluid footer">
         <div class="footertext">
             <div class="row">
                 <div class="col-md-4">
