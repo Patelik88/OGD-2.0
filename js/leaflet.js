@@ -44,11 +44,18 @@ const maxBounds = L.latLngBounds(
 // set the map
 var map = L.map('graph', {
     maxBounds: maxBounds,
-    gestureHandling: true,
     maxZoom: 14,
     minZoom: 11,
     zoomControl: true,
     attributionControl: false,
+    gestureHandling: true,
+    gestureHandlingOptions: {
+        text: {
+            touch: "Zwei Finger zum Scrollen verwenden",
+            scroll: "Strg + Mausrad zum Scrollen verwenden",
+            scrollMac: "\u2318 + Mausrad zum Scrollen verwenden"
+        }
+    }
 }).setView([47.54, 9.075], 11);
 
 // change map style

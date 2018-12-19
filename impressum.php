@@ -54,7 +54,7 @@
     <a href="https://www.youtube.com/channel/UCROgfPUdXZ41UP52obBbe-g" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
 
-<main class="haupt">
+<main class="container-fluid haupt">
     <div class="containeri">
         <div class="row">
             <div class="col">
