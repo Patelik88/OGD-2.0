@@ -25,16 +25,6 @@ function hideno2() {
     info.style.display = 'none';
 }
 
-// get the modal
-var modal = document.getElementById('id01');
-
-// when the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 // restrict view of map
 const maxBounds = L.latLngBounds(
     L.latLng(47.7157, 8.6538),
@@ -49,13 +39,6 @@ var map = L.map('graph', {
     zoomControl: true,
     attributionControl: false,
     gestureHandling: true,
-    gestureHandlingOptions: {
-        text: {
-            touch: "Zwei Finger zum Scrollen verwenden",
-            scroll: "Strg + Mausrad zum Scrollen verwenden",
-            scrollMac: "\u2318 + Mausrad zum Scrollen verwenden"
-        }
-    }
 }).setView([47.54, 9.075], 11);
 
 // change map style
