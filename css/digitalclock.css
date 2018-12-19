@@ -3,20 +3,13 @@ body {
 }
 
 .clock {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    text-align: center;
+    margin-left: 25px;
     color: gold;
     font-size: 60px;
     font-family: inherit;
     letter-spacing: 7px;
-}
-
-@media screen and (max-width: 1000px) {
-    .clock {
-        top: 90%;
-    }
 }
 
 .spacetime {

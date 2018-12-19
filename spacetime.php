@@ -50,20 +50,55 @@
             <li class="nav-item">
                 <a class="nav-link" href="impressum.php">Impressum</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showinfo()">
+                    Informationen zu Spacetime
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="btn-group mx-5">
-        <button class="btn btn-dark btn-lg" type="button"
-                onclick="document.getElementById('infoBox').style.display='block'" style="border-radius:50%; position:absolute;">
-            <i class="fa fa-info-circle"></i>
-        </button>
-    </div>
-</div>
+<script>
+    function showinfo() {
+        document.getElementById('infoBox').style.display = 'block'
+        document.getElementById('infoBox').style.position = 'absolute'
+    }
+</script>
 
 <main>
+    <div id="MyClockDisplay" class="container-fluid clock">
+        <script>
+            function showTime() {
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var session = "AM";
+
+                if (h == 0) {
+                    h = 12;
+                }
+
+                if (h > 12) {
+                    h = h - 12;
+                    session = "PM";
+                }
+
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+
+                var time = h + ":" + m + ":" + s + " " + session;
+                document.getElementById("MyClockDisplay").innerText = time;
+                document.getElementById("MyClockDisplay").textContent = time;
+
+                setTimeout(showTime, 1000);
+            }
+
+            showTime();
+        </script>
+    </div>
     <div id="infoBox" class="modal">
         <form class="modal-content leftmodal animate" action="/spacetime.php">
             <div class="modalcontainer container textmodal">
@@ -80,7 +115,6 @@
     </div>
 
     <script>
-
         // get the modal
         var modal = document.getElementById('infoBox');
 
@@ -90,10 +124,9 @@
                 modal.style.display = "none";
             }
         }
-
     </script>
 
-    <div id="time" class="spacetime d-flex justify-content-center">
+    <div id="time" class="container spacetime">
 
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script>
@@ -236,38 +269,6 @@
                 });
             }, 1000);
 
-        </script>
-    </div>
-    <div id="MyClockDisplay" class="clock">
-        <script>
-            function showTime() {
-                var date = new Date();
-                var h = date.getHours(); // 0 - 23
-                var m = date.getMinutes(); // 0 - 59
-                var s = date.getSeconds(); // 0 - 59
-                var session = "AM";
-
-                if (h == 0) {
-                    h = 12;
-                }
-
-                if (h > 12) {
-                    h = h - 12;
-                    session = "PM";
-                }
-
-                h = (h < 10) ? "0" + h : h;
-                m = (m < 10) ? "0" + m : m;
-                s = (s < 10) ? "0" + s : s;
-
-                var time = h + ":" + m + ":" + s + " " + session;
-                document.getElementById("MyClockDisplay").innerText = time;
-                document.getElementById("MyClockDisplay").textContent = time;
-
-                setTimeout(showTime, 5000);
-            }
-
-            showTime();
         </script>
     </div>
 </main>
