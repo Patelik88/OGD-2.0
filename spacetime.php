@@ -50,10 +50,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="impressum.php">Impressum</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" onclick="showinfo()">
-                    Informationen zu Spacetime
-                </a>
+            <li class="nav-item" style="cursor:pointer;">
+                <a class="nav-link" href="#" onclick="showinfo()" style="cursor:pointer;">Informationen zu Spacetime</a>
             </li>
         </ul>
     </div>

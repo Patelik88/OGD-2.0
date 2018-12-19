@@ -23,3 +23,7 @@ body {
 .customcontainer {
     margin-left: 0 !important;
 }
+
+a.nav-link {
+    cursor: pointer;
+}
