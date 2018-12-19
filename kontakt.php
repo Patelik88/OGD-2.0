@@ -97,11 +97,9 @@
 </main>
 
 <footer>
-    <footer>
-        <div class="footer">
+        <div class="container-fluid footer">
             <div class="footertext">
                 <div class="row">
-
                     <div class="col-md-4">
                         <h4>Kontakt</h4>
                         <ul class="contact">
@@ -111,7 +109,6 @@
                             <li>+41 555 66 77</li>
                         </ul>
                     </div>
-
                     <div class="col-md-4">
                         <h4>Partnerlinks</h4>
                         <ul class="partner">
@@ -120,7 +117,6 @@
                             <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
                         </ul>
                     </div>
-
                     <div class="col-md-4">
                         <h4>Sitemap</h4>
                         <ul class="sitemap">
@@ -130,7 +126,6 @@
                             <li class="last"><a href="impressum.php">Impressum</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>

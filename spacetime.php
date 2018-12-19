@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/links.css">
     <link rel="stylesheet" href="css/digitalclock.css">
     <script src="js/jquery.min.js"></script>
 
@@ -31,7 +30,6 @@
 
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Luftverschmutzung im Thurgau</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -117,7 +115,7 @@
                 "moon": radius / 96
             };
 
-            // Space
+            // space
             var svg = spacetime.append("svg")
                 .attr("width", width)
                 .attr("height", height)
@@ -125,20 +123,20 @@
                 .append("g")
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-            // Sun
+            // sun
             svg.append("circle")
                 .attr("class", "sun")
                 .attr("r", radii.sun)
                 .style("fill", "rgba(255, 204, 0, 1.0)");
 
-            // Earth's orbit
+            // earth's orbit
             svg.append("circle")
                 .attr("class", "earthOrbit")
                 .attr("r", radii.earthOrbit)
                 .style("fill", "none")
                 .style("stroke", "rgba(255, 204, 0, 0.25)");
 
-            // Current position of Earth in its orbit
+            // current position of Earth in its orbit
             var earthOrbitPosition = d3.svg.arc()
                 .outerRadius(radii.earthOrbit + 1)
                 .innerRadius(radii.earthOrbit - 1)
@@ -149,14 +147,14 @@
                 .attr("d", earthOrbitPosition)
                 .style("fill", "rgba(255, 204, 0, 0.75)");
 
-            // Earth
+            // earth
             svg.append("circle")
                 .attr("class", "earth")
                 .attr("r", radii.earth)
                 .attr("transform", "translate(0," + -radii.earthOrbit + ")")
                 .style("fill", "rgba(113, 170, 255, 1.0)");
 
-            // Time of day
+            // time of day
             var day = d3.svg.arc()
                 .outerRadius(radii.earth)
                 .innerRadius(0)
@@ -168,7 +166,7 @@
                 .attr("transform", "translate(0," + -radii.earthOrbit + ")")
                 .style("fill", "rgba(53, 110, 195, 1.0)");
 
-            // Moon's orbit
+            // moon's orbit
             svg.append("circle")
                 .attr("class", "moonOrbit")
                 .attr("r", radii.moonOrbit)
@@ -176,7 +174,7 @@
                 .style("fill", "none")
                 .style("stroke", "rgba(113, 170, 255, 0.25)");
 
-            // Current position of the Moon in its orbit
+            // current position of the Moon in its orbit
             var moonOrbitPosition = d3.svg.arc()
                 .outerRadius(radii.moonOrbit + 1)
                 .innerRadius(radii.moonOrbit - 1)
@@ -188,14 +186,14 @@
                 .attr("transform", "translate(0," + -radii.earthOrbit + ")")
                 .style("fill", "rgba(113, 170, 255, 0.75)");
 
-            // Moon
+            // moon
             svg.append("circle")
                 .attr("class", "moon")
                 .attr("r", radii.moon)
                 .attr("transform", "translate(0," + (-radii.earthOrbit + -radii.moonOrbit) + ")")
                 .style("fill", "rgba(150, 150, 150, 1.0)");
 
-            // Update the clock every second
+            // update the clock every second
             setInterval(function () {
                 now = new Date();
 
@@ -207,31 +205,31 @@
 
                 d3.transition().tween("orbit", function () {
                     return function (t) {
-                        // Animate Earth orbit position
+                        // animate earth orbit position
                         d3.select(".earthOrbitPosition")
                             .attr("d", earthOrbitPosition.endAngle(interpolateEarthOrbitPosition(t)));
 
-                        // Transition Earth
+                        // transition Earth
                         d3.select(".earth")
                             .attr("transform", "translate(" + radii.earthOrbit * Math.sin(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + "," + -radii.earthOrbit * Math.cos(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + ")");
 
-                        // Animate day
-                        // Transition day
+                        // animate day
+                        // transition day
                         d3.select(".day")
                             .attr("d", day.endAngle(interpolateDay(t)))
                             .attr("transform", "translate(" + radii.earthOrbit * Math.sin(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + "," + -radii.earthOrbit * Math.cos(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + ")");
 
-                        // Transition Moon orbit
+                        // transition Moon orbit
                         d3.select(".moonOrbit")
                             .attr("transform", "translate(" + radii.earthOrbit * Math.sin(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + "," + -radii.earthOrbit * Math.cos(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + ")");
 
-                        // Animate Moon orbit position
-                        // Transition Moon orbit position
+                        // animate Moon orbit position
+                        // transition Moon orbit position
                         d3.select(".moonOrbitPosition")
                             .attr("d", moonOrbitPosition.endAngle(interpolateMoonOrbitPosition(t)))
                             .attr("transform", "translate(" + radii.earthOrbit * Math.sin(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + "," + -radii.earthOrbit * Math.cos(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + ")");
 
-                        // Transition Moon
+                        // transition Moon
                         d3.select(".moon")
                             .attr("transform", "translate(" + (radii.earthOrbit * Math.sin(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + radii.moonOrbit * Math.sin(interpolateMoonOrbitPosition(t) - moonOrbitPosition.startAngle()())) + "," + (-radii.earthOrbit * Math.cos(interpolateEarthOrbitPosition(t) - earthOrbitPosition.startAngle()()) + -radii.moonOrbit * Math.cos(interpolateMoonOrbitPosition(t) - moonOrbitPosition.startAngle()())) + ")");
                     };
@@ -266,7 +264,7 @@
                 document.getElementById("MyClockDisplay").innerText = time;
                 document.getElementById("MyClockDisplay").textContent = time;
 
-                setTimeout(showTime, 1000);
+                setTimeout(showTime, 5000);
             }
 
             showTime();
@@ -275,10 +273,9 @@
 </main>
 
 <footer>
-    <div class="footer">
+    <div class="container-fluid footer">
         <div class="footertext">
             <div class="row">
-
                 <div class="col-md-4">
                     <h4>Kontakt</h4>
                     <ul class="contact">
@@ -288,15 +285,14 @@
                         <li>+41 555 66 77</li>
                     </ul>
                 </div>
-
                 <div class="col-md-4">
                     <h4>Partnerlinks</h4>
                     <ul class="partner">
-                        <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a></li>
+                        <li><a target="_blank" href="https://www.kanti-frauenfeld.ch">» Kantonschule Frauenfeld</a>
+                        </li>
                         <li><a target="_blank" href="https://www.tg.ch">» Kanton Thurgau</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4">
                     <h4>Sitemap</h4>
                     <ul class="sitemap">
@@ -304,10 +300,8 @@
                         <li class="active"><a href="#">Zeit</a></li>
                         <li><a href="kontakt.php">Kontakt</a></li>
                         <li class="last"><a href="impressum.php">Impressum</a></li>
-
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
