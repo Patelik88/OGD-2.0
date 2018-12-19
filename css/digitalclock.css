@@ -5,11 +5,17 @@ body {
 .clock {
     position: relative;
     text-align: center;
-    margin-left: 25px;
+    padding-left: 50px;
     color: gold;
     font-size: 60px;
     font-family: inherit;
     letter-spacing: 7px;
+}
+
+@media screen and (max-width: 450px){
+    .clock {
+        padding-left: 0;
+    }
 }
 
 .spacetime {
