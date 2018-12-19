@@ -1,9 +1,11 @@
 div.footer {
-    background-color: #999999;
+    /*background-color: #999999;*/
+    background-color: #343a40;
     position: relative;
     left: 0;
     bottom: 0;
-    color: #333333;
+    /*color: #333333;*/
+    color: #fff;
 }
 
 div.footertext {
@@ -19,16 +21,28 @@ div.footertext li {
 }
 
 div.footertext a {
-    color: #333333;
+    /*color: #333333;*/
+    color: #fff;
     text-decoration: none;
-
 }
 
 ul.sitemap li {
-    border-bottom: 1px solid #333333;
+    /*border-bottom: 1px solid #333333;*/
+    border-bottom: 1px solid #fff;
     list-style: none;
     width: 60%;
+}
 
+.footer li.active a {
+    color: #fff !important;
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer li a:hover {
+    color: #fff;
 }
 
 html {
@@ -43,15 +57,10 @@ body {
     overflow-x: hidden;
 }
 
-/*body::after {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*height: 100px;*/
-/*}*/
-
 footer {
     position: absolute;
     bottom: 0;
+    margin-top: 50%;
     width: 100%;
     height: 40px;
 }

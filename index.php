@@ -100,7 +100,7 @@
     </div>
 </div>
 
-<div id="container">
+<div id="container spacer">
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/index.php">
             <div class="modalcontainer container">
@@ -149,8 +149,8 @@
                     <ul class="sitemap">
                         <li class="first active"><a href="#">Home</a></li>
                         <li><a href="spacetime.php">Zeit</a></li>
-                        <li class="last"><a href="kontakt.php">Kontakt</a></li>
-                        <li><a href="impressum.php">Impressum</a></li>
+                        <li><a href="kontakt.php">Kontakt</a></li>
+                        <li class="last"><a href="impressum.php">Impressum</a></li>
                     </ul>
                 </div>
             </div>

@@ -124,11 +124,10 @@
                     <div class="col-md-4">
                         <h4>Sitemap</h4>
                         <ul class="sitemap">
-                            <li class="first active"><a href="/">Home</a></li>
+                            <li class="first"><a href="index.php">Home</a></li>
                             <li><a href="spacetime.php">Zeit</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li class="active"><a href="#">Kontakt</a></li>
                             <li class="last"><a href="impressum.php">Impressum</a></li>
-
                         </ul>
                     </div>
 
