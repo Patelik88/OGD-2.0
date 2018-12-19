@@ -30,13 +30,6 @@
     <title>OGD-2.0</title>
 
 </head>
-<style>
-
-    body {
-        background: #222;
-    }
-
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,7 +38,6 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -66,7 +58,7 @@
 
 <div class="container-fluid">
     <div class="btn-group mx-5">
-        <button class="btn btn-dark btn-lg float-right" type="button"
+        <button class="btn btn-dark btn-lg" type="button"
                 onclick="document.getElementById('infoBox').style.display='block'" style="border-radius:50%; position:absolute;">
             <i class="fa fa-info-circle"></i>
         </button>
@@ -75,7 +67,7 @@
 
 <main>
     <div id="infoBox" class="modal">
-        <form class="modal-content animate" action="/spacetime.php">
+        <form class="modal-content leftmodal animate" action="/spacetime.php">
             <div class="modalcontainer container textmodal">
                 <p id="infotext" class="text-center">Damit Sie die Zeit nicht vergessen, wird auf dieser Seite die Zeit angezeigt.
                     Zudem können Sie sehen, in welcher Position die Sonne (Gelb) zur Erde (Blau) steht und wie die der Mond (Grau) zur Erde steht.</p>

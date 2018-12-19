@@ -3,8 +3,8 @@
 }
 
 #graph {
-    width: 100%;
-    height: 700px;
+    width: 100vw;
+    height: 80vh;
 }
 
 button:hover {
@@ -97,6 +97,11 @@ button:hover {
 
 #infoBox {
     display: none;
+}
+
+.modal-content.leftmodal {
+    margin-left: 5vw;
+    margin-top: 15vh;
 }
 
 #infotext {

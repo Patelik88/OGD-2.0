@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: #222 !important;
 }
 
 .clock {
@@ -9,10 +9,14 @@ body {
     transform: translateX(-50%) translateY(-50%);
     color: gold;
     font-size: 60px;
-    font-family: Orbitron;
+    font-family: inherit;
     letter-spacing: 7px;
+}
 
-
+@media screen and (max-width: 1000px) {
+    .clock {
+        top: 90%;
+    }
 }
 
 .spacetime {

@@ -53,17 +53,22 @@ var map = L.map('graph', {
 
 // change map style
 function changeMapStyle(name) {
-    if (dataLayerName !== '') {
-        // add new layer to map
-        maplayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            id: name,
-            format: 'images/png',
-            accessToken: 'pk.eyJ1IjoiamFub2JlMiIsImEiOiJjam00b3Vpa2wzZjNoM3BxbmJtams3Z2U0In0.ZOdhoX3gBfEJkGy0-w8Bwg'
-        }).addTo(map);
 
-        // add data layer over ground layer
-        if (wmsLayer !== '')
-            wmsLayer.addTo(map);
+    // remove previous layer on the map
+    if (maplayer !== '') {
+        map.removeLayer(maplayer);
+    }
+
+    // add new layer to map
+    maplayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        id: name,
+        format: 'images/png',
+        accessToken: 'pk.eyJ1IjoiamFub2JlMiIsImEiOiJjam00b3Vpa2wzZjNoM3BxbmJtams3Z2U0In0.ZOdhoX3gBfEJkGy0-w8Bwg'
+    }).addTo(map);
+
+    // move wmslayer to front
+    if (wmsLayer !== '') {
+        wmsLayer.bringToFront();
     }
 }
 
