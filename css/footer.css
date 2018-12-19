@@ -66,6 +66,11 @@ footer {
     height: 0;
 }
 
+@media screen and (max-device-width: 630px) {
+    .footer {
+        margin-top: 10vh !important;
+    }
+}
 
 @media screen and (max-width: 630px) {
     .footer {
