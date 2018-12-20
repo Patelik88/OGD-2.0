@@ -71,3 +71,7 @@ footer {
     width: 100%;
     height: 172px;
 }
+
+.btn-bottom {
+    margin-bottom: 10%;
+}

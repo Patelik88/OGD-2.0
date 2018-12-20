@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Abschicken" name="Abschicken"
+                        <input type="submit" class="btn btn-success btn-send btn-bottom" value="Abschicken" name="Abschicken"
                                id="Abschicken">
                     </div>
                 </div>
