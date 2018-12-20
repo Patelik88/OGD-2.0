@@ -75,3 +75,7 @@ footer {
 .btn-bottom {
     margin-bottom: 10%;
 }
+
+html {
+    background-color: #343a40 !important;
+}
