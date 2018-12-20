@@ -1,7 +1,5 @@
 // global variables
-var mapname = 'mapbox.light';
-// streets, satellite, light
-
+var mapname = '';
 var dataLayerName = 'none';
 var wmsLayer = '';
 var maplayer = '';
@@ -26,10 +24,7 @@ function hideno2() {
 }
 
 // restrict view of map
-const maxBounds = L.latLngBounds(
-    L.latLng(47.7157, 8.6538),
-    L.latLng(47.3730, 9.47)
-);
+var maxBounds = L.latLngBounds(L.latLng(47.7157, 8.6538), L.latLng(47.3730, 9.47));
 
 // set the map
 var map = L.map('graph', {
@@ -49,11 +44,10 @@ function changeMapStyle(name) {
         map.removeLayer(maplayer);
     }
 
-    // add new layer to map
-    maplayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        id: name,
+    // baselayer
+    L.tileLayer('https://{s}.tiles.mapbox.com/v3/{key}/{z}/{x}/{y}.png', {
         format: 'images/png',
-        accessToken: 'pk.eyJ1IjoiamFub2JlMiIsImEiOiJjam00b3Vpa2wzZjNoM3BxbmJtams3Z2U0In0.ZOdhoX3gBfEJkGy0-w8Bwg'
+        key: 'lrqdo.me2bng9n',
     }).addTo(map);
 
     // move wmslayer to front
@@ -73,16 +67,14 @@ function changeLayer(thisId) {
         dataLayerName = thisId;
     }
 
-    wmsLayer = L.tileLayer.wms('http://map.geo.tg.ch//proxy/geofy_chsdi3/luftbelastung-stickstoff?access_key=YoW2syIQ4xe0ccJA&', {
+    // hahahahahahahaha
+    wmsLayer = L.WMS.overlay('http://map.geo.tg.ch//proxy/geofy_chsdi3/luftbelastung-stickstoff?access_key=YoW2syIQ4xe0ccJA&', {
         version: '1.3.0',
         format: 'image/png',
         crs: L.CRS.EPSG4326,
-        opacity: 0.8,
-        tileSize: 2500,
-        tiled: false,
+        opacity: 1,
         transparent: true,
-        identify: true,
-        layers: dataLayerName
+        layers: dataLayerName,
     }).addTo(map);
 }
 
@@ -94,9 +86,6 @@ var zoom = L.control.zoom({
     position: 'topright'
 });
 zoom.addTo(map);
-
-// scale bar
-L.control.scale().addTo(map);
 
 // generate map
 changeMapStyle(mapname);

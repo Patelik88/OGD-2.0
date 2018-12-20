@@ -33,7 +33,7 @@ button:hover {
     margin-top: 2.5%;
     margin-right: 2.5%;
     margin-left: 5px;
-    overflow: auto; /* enable scroll if needed */
+    overflow: hidden; /* enable scroll if needed */
     background-color: rgb(0, 0, 0); /* fallback color */
     background-color: transparent; /* black w/ opacity */
 
