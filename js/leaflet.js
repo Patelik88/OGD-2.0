@@ -36,7 +36,6 @@ var map = L.map('graph', {
     gestureHandling: true,
 }).setView([47.54, 9.075], 11);
 
-
 function changeMapStyle(name) {
 
     // remove previous layer on the map
