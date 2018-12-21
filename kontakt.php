@@ -150,19 +150,15 @@ function sendmail() {
 }
 
 function sendenerfolgreich() {
-
-    header('Location: send-mail-form.php'); // mail wurde gesendet
     exit();
 }
 
 if (array_key_exists('Abschicken', $_POST)) {
     sendmail();
-    header('Location: send-mail-form.php');
 
     echo '<script type="text/javascript">';
     echo 'document.getElementById("sendsuccess").style.display = "block";';
     echo '</script>';
-
 }
 
 ?>
