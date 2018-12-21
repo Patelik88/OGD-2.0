@@ -50,7 +50,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_name">Vorname</label>
-                            <input id="form_name" type="text" name="vorname" class="form-control" placeholder="Vorname"
+                            <input id="form_name" type="text" pattern="[a-zA-Z]*" name="vorname" class="form-control" placeholder="Vorname"
                                    required="required" data-error="Der Vorname wird benötigt">
                             <div class="help-block with-errors"></div>
                         </div>
@@ -58,7 +58,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_lastname">Nachname</label>
-                            <input id="form_lastname" type="text" name="nachname" class="form-control"
+                            <input id="form_lastname" type="text" pattern="[a-zA-Z]*" name="nachname" class="form-control"
                                    placeholder="Nachname"
                                    required="required" data-error="Der Nachname wird benötigt">
                             <div class="help-block with-errors"></div>
@@ -69,7 +69,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_email">E-Mail</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="E-Mail"
+                            <input id="form_email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" class="form-control" placeholder="E-Mail"
                                    required="required" data-error="Die E-Mail wird benötigt">
                             <div class="help-block with-errors"></div>
                         </div>
