@@ -69,7 +69,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_email">E-Mail</label>
-                            <input id="form_email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" class="form-control" placeholder="E-Mail"
+                            <input id="form_email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-control" placeholder="E-Mail"
                                    required="required" data-error="Die E-Mail wird benötigt">
                             <div class="help-block with-errors"></div>
                         </div>
