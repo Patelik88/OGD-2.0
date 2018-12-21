@@ -23,8 +23,12 @@ function hideno2() {
     info.style.display = 'none';
 }
 
+// set max bounds
+var maxBounds = L.latLngBounds([[47.71655, 8.53430], [47.35556, 9.57]]);
+
 // set the map
 var map = L.map('graph', {
+    maxBounds: maxBounds,
     maxZoom: 14,
     minZoom: 11,
     zoomControl: false,
@@ -32,11 +36,6 @@ var map = L.map('graph', {
     gestureHandling: true,
 }).setView([47.54, 9.075], 11);
 
-// hard bounds
-map.addHardBounds();
-
-// set max bounds
-var maxBounds = L.latLngBounds([[47.8157, 8.2538], [47.2730, 9.77]]);
 
 function changeMapStyle(name) {
 
@@ -81,9 +80,6 @@ function changeLayer(thisId) {
 
 // disable scroll wheel
 map.scrollWheelZoom.disable();
-
-// set max bounds
-map.setMaxBounds(maxBounds);
 
 // zoom control
 var zoom = L.control.zoom({
