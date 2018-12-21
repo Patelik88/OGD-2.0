@@ -1,6 +1,7 @@
 /* fixed / sticky icon bar ( vertically aligned 50% from the top of the screen ) */
 .icon-bar {
     position: fixed;
+    z-index: -1;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
