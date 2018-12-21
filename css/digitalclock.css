@@ -12,7 +12,7 @@ body {
     letter-spacing: 7px;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
     .clock {
         padding-left: 0;
     }
