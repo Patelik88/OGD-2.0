@@ -59,8 +59,7 @@
                         <div class="form-group">
                             <label for="form_lastname">Nachname</label>
                             <input id="form_lastname" type="text" pattern="[a-zA-Z]*" name="nachname" class="form-control"
-                                   placeholder="Nachname"
-                                   required="required" data-error="Der Nachname wird benötigt">
+                                   placeholder="Nachname" required="required" data-error="Der Nachname wird benötigt">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -69,8 +68,8 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_email">E-Mail</label>
-                            <input id="form_email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-control" placeholder="E-Mail"
-                                   required="required" data-error="Die E-Mail wird benötigt">
+                            <input id="form_email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-control"
+                                   placeholder="E-Mail" required="required" data-error="Die E-Mail wird benötigt">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -80,8 +79,7 @@
                         <div class="form-group">
                             <label for="form_message">Nachricht</label>
                             <textarea id="form_message" name="nachricht" class="form-control" placeholder="Nachricht"
-                                      rows="4"
-                                      required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
+                                      rows="4" maxlength="255" required="required" data-error="Geben Sie eine Nachricht ein"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
