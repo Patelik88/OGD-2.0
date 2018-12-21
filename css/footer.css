@@ -1,11 +1,9 @@
 div.footer {
-    /*background-color: #999999;*/
     background-color: #343a40;
     position: relative;
     width: 100vw !important;
     left: 0;
     bottom: 0;
-    /*color: #333333;*/
     color: #fff;
 }
 
@@ -22,13 +20,11 @@ div.footertext li {
 }
 
 div.footertext a {
-    /*color: #333333;*/
     color: #fff;
     text-decoration: none;
 }
 
 ul.sitemap li {
-    /*border-bottom: 1px solid #333333;*/
     border-bottom: 1px solid #fff;
     list-style: none;
     width: 60%;

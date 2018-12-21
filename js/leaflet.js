@@ -65,7 +65,7 @@ function changeLayer(thisId) {
     if (dataLayerName !== '') {
         dataLayerName = thisId;
     }
-    
+
     // hahahahahahahaha
     wmsLayer = L.WMS.overlay('http://map.geo.tg.ch//proxy/geofy_chsdi3/luftbelastung-stickstoff?access_key=YoW2syIQ4xe0ccJA&', {
         version: '1.3.0',
